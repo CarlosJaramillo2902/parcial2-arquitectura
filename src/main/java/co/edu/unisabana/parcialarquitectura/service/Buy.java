@@ -1,16 +1,12 @@
 package co.edu.unisabana.parcialarquitectura.service;
 
 
+import co.edu.unisabana.parcialarquitectura.Buy_database;
 import co.edu.unisabana.parcialarquitectura.repository.Database;
 
 import javax.xml.crypto.Data;
 
-public class Buy {
-
-  private Database database;
-  public Buy(Database database) {
-    this.database=database;
-  }
+public class Buy implements Buy_database {
 
   public String makePurchase(int vendorCode, int buyerCode, String item) {
     if (buyerCode == vendorCode) {
