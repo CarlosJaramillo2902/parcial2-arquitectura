@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class BuyTest {
 
   private co.edu.unisabana.parcialarquitectura.repository.Database Database;
-  private final Buy service = new Buy(Database);
+  private final Buy service = new Buy();
 
   @Test
   public void test() {
